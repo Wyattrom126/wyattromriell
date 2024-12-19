@@ -1,0 +1,227 @@
+/* Navbar container styling */
+.navbar {
+    display: flex; /* Enable flexbox */
+    justify-content: space-between; /* Spread items to the far left and right */
+    align-items: center; /* Vertically center the content */
+    background-color: #333;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Styling for anchors on the left */
+.left-anchor a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px 15px;
+}
+
+.left-anchor a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Styling for anchors on the right */
+.right-anchors {
+    display: flex; /* Align the links horizontally */
+    gap: 12px; /* Add space between the links */
+    margin-right: 35px;
+}
+
+.right-anchors a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px 15px;
+}
+
+.right-anchors a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+
+/* Add a spacer above anchor targets to offset the navbar height */
+.section {
+    position: relative; /* Ensure the section can be adjusted */
+}
+
+.section:before {
+    content: ''; /* Creates an empty space */
+    display: block;
+    height: 70px; /* Adjust this to match the navbar height */
+    margin-top: -70px; /* Pull the element back up */
+    visibility: hidden; /* Ensure it's not visible */
+}
+
+/* General body and container styling */
+body {
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Center the container */
+.container {
+    width: 72%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center; /* Center-align text within the container */
+    margin-top: 100px;
+}
+
+/* Center the header content */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 50px;
+    margin-top: 100px;
+}
+
+/* Contact information spacing */
+.contact-info {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+/* Section styling */
+.section {
+    margin-bottom: 20px;
+}
+
+/* Style for skills list */
+.skills-list {
+    list-style-type: circle;
+    padding-left: 0;
+    margin-left: 0;
+    display: inline-block; /* Center-align the list */
+    text-align: left;
+}
+
+/* Remove bullet points for experience and center-align */
+.experience-item {
+    margin-bottom: 15px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.profile-image img {
+    width: 175px; /* Adjust size as needed */
+    height: 175px; /* Keep this equal to width for a perfect circle */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image scales properly within the circle */
+    border: 3px solid #333; /* Optional: Add a border */
+    display: block;
+    margin: 0 auto; /* Centers the image */
+}
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.favorites-container {
+    display: flex; /* Arrange items in a row */
+    justify-content: space-between; /* Push the left and right images to the sides */
+    align-items: center; /* Vertically align the items */
+    gap: 20px; /* Space between images and the list */
+    padding: 10px; /* Add padding to the container */
+    background-color: black;
+    margin-top: 75px;
+    border-radius: 15px;
+}
+
+.image-container {
+    flex: 0; /* Ensure images do not stretch */
+    text-align: center; /* Center-align the image in its container */
+}
+
+.favorite-image {
+    width: 150px; /* Set the image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional: shadow */
+}
+
+.favorites {
+    flex: 1; /* Allow the list section to take up remaining space */
+    max-width: 600px; /* Optional: constrain list width */
+    background: black;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: 0 20px; /* Add space between images and the list */
+}
+
+.favorites ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.favorites ul {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-left: 30px;
+    margin: 5px 0;
+}
+
+.favorites ul li {
+    margin: 5px 0;
+}
+
+footer{
+    font-size: 1rem;
+}
+
+/* Footer styling */
+.footer {
+    background-color: white; /* Example footer background */
+    color: white; /* Default footer text color */
+    padding: 5px;
+    text-align: center;
+    margin-top: 75px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* Links inside the footer */
+.footer a {
+    color: black; /* Default color for links in the footer */
+    text-decoration: none; /* Optional: Removes the underline */
+}
+
+/* Hover state for footer links */
+.footer a:hover {
+    color: greenyellow; /* Changes link color when hovered */
+    text-decoration: underline; /* Optional: Adds an underline on hover */
+}
+
+/* Styling for the video container */
+.video{
+    margin-top: 75px;
+    text-align: center;
+}
+
+.tableauPlaceholder {
+    margin-top: 75px;
+}

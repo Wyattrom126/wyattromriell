@@ -1,0 +1,29 @@
+.myname{
+    color:blue !important;
+    font
+}
+.idaho{
+   max-width: 30%;
+   height: auto;
+}
+
+.tetriscontainer {
+    background-color: white; /* Example footer background */
+    color: black; /* Default footer text color */
+    padding: 20px;
+    text-align: center;
+    margin-top: 75px;
+    border-radius: 15px;
+}
+
+/* Links inside the footer */
+.tetriscontainer a {
+    color: rgb(48, 188, 235); /* Default color for links in the footer */
+    text-decoration: none; /* Optional: Removes the underline */
+}
+
+/* Hover state for footer links */
+.tetriscontainer a:hover {
+    color: orange; /* Changes link color when hovered */
+    text-decoration: underline; /* Optional: Adds an underline on hover */
+}
